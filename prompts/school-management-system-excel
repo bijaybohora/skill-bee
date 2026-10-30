@@ -1,0 +1,53 @@
+Hey Claude, help me build a School Management Dashboard in Excel. 
+Native features only — no macros. Use demo1, demo2, demo3… for 
+student and teacher names, and parent1, parent2… for guardians. 
+Pakistani school context, fees in PKR, classes Nursery to 12th.
+
+Build these 8 sheets:
+
+1. Settings — dropdown lists (classes, sections A–D, gender, 
+   status, fee status, attendance, subjects) and a fee structure 
+   table (3000–8000 PKR per class).
+
+2. Students — 20 students across 3 classes (5th, 6th, 7th) with 
+   ID (STU-001…), roll no, section, guardian, phone, address.
+
+3. Teachers — 8 teachers with ID, subject, class, contact info, 
+   joining date, salary.
+
+4. Fees — last 3 months for all 20 students, mixed statuses. 
+   Use XLOOKUP to auto-fill name and class. Auto-calculate 
+   fee due. Color code: green=paid, red=unpaid, yellow=partial, 
+   orange=overdue.
+
+5. Attendance — 10 working days × 20 students (~200 rows), 
+   mostly Present. Color code each status. Add a date range 
+   filter at the top using FILTER.
+
+6. Grades — 40 rows (20 students × 2 terms). Auto-calculate 
+   total, percentage, grade (A+ to Fail using IFS), and 
+   Pass/Fail. Green for pass, red for fail, color scale on 
+   percentage.
+
+7. Timetable — weekly grid (8 periods × Mon–Fri) for each of 
+   the 3 classes. Show subject and teacher ID in each cell.
+
+8. Dashboard (build last) — KPI cards for total students, 
+   present/absent today (COUNTIFS with TODAY()), fees 
+   collected this month, fees pending, pass/fail %. 
+   Add a Top 5 students list, a student search box, 
+   attendance % per student (orange if below 75%), and 
+   month/year filters. Charts: bar (class count), line 
+   (attendance trend), pie (pass vs fail), column (fees 
+   by month).
+
+Polish: Format everything as Excel Tables. Freeze top rows. 
+Color-coded headers per sheet. Add HYPERLINK nav buttons 
+between sheets. Set print areas, landscape, fit to one page. 
+Protect formula cells, leave inputs unlocked.
+
+Double-check before finishing: all names are demo1–demo20, 
+no broken formulas, dropdowns work, formatting renders, 
+nav links jump correctly.
+
+Take your time and build it properly. Thanks!
